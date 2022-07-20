@@ -1,6 +1,6 @@
 #' @title logit
 #'
-#' @description Testing 123
+#' @description Logit function
 #'
 #' @param x A value between 0 and 1
 #'
