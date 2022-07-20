@@ -6,6 +6,7 @@ Author: Lauren Gordon
 Maintainer: Lauren Gordon <lauren.gordon@utoronto.ca>
 Description: Generates summary statistics for discrimination and calibration of prediction models. Can be used to generate these estimates when the same model is validated in several settings, or to contrast groups of similar models that differ in a key aspect. 
     Meant for use in systematic reviews of predictive models. Please cite this package if used in an academic publication.
+    Adapted from Debray TP, Koffijberg H, Nieboer D, Vergouwe Y, Steyerberg EW, Moons KG. Meta‐analysis and aggregation of multiple published prediction models. Statistics in medicine. 2014 Jun 30;33(14):2341-62.
 License: GNU General Public License v3.0
 Encoding: UTF-8
 RoxygenNote: 7.2.0
