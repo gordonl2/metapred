@@ -1,10 +1,13 @@
 #' @title get_CI_low
 #'
-#' @description Testing 123
+#' @description Estimate lower bound of confidence interval of the the c-statistic.
 #'
-#' @param x A value between 0 and 1
+#' @param logitc logit of the c-statistic (AUC) of a predictive model, calculated using the logit function
+#' @param varlogitc variance of the logit of the c-statistic (AUC) of a predictive model, estimated using est_varlogitc
+#' @param n Sample size in the dataset used to generate the c-statistic
+#' @param alpha Desired significance level
 #'
-#' @return The logit of x
+#' @return Lower bound of confidence interval of the c-statistic
 #' @export
 
 get_CI_low <- function(logitc, varlogitc, n, alpha = 0.05){

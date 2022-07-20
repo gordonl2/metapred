@@ -7,11 +7,15 @@
 est_varlogitc(c, num_events, num_non_events)
 }
 \arguments{
-\item{x}{A value between 0 and 1}
+\item{c}{C-statistic (AUC) of a predictive model, value between 0 and 1}
+
+\item{num_events}{Number of events in the dataset used to generate the c-statistic}
+
+\item{num_non_events}{Number of non-events in the dataset used to generate the c-statistic (number of cases - number of events)}
 }
 \value{
-The logit of x
+Variance of the logit of the c-statistic
 }
 \description{
-Testing 123
+Estimate variance of the logit of the c-statistic based on the sample size and number of events.
 }

@@ -7,11 +7,17 @@
 get_CI_vec(logitc, SElogitc, n, alpha = 0.05)
 }
 \arguments{
-\item{x}{A value between 0 and 1}
+\item{logitc}{logit of the c-statistic (AUC) of a predictive model, calculated using the logit function}
+
+\item{SElogitc}{standard error of the logit of the c-statistic (AUC) of a predictive model, estimated using est_SElogitc}
+
+\item{n}{Sample size in the dataset used to generate the c-statistic}
+
+\item{alpha}{Desired significance level}
 }
 \value{
-The logit of x
+Lower bound of confidence interval of the c-statistic
 }
 \description{
-Testing 123
+Estimate confidence intervals of the the c-statistic for multiple studies at once. Inputs are arrays representing corresponding values for each study.
 }

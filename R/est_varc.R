@@ -1,15 +1,17 @@
 #' @title est_varc
 #'
-#' @description Testing 123
+#' @description Estimate variance of the c-statistic based on the sample size and number of events.
 #'
-#' @param x A value between 0 and 1
+#' @param c C-statistic (AUC) of a predictive model, value between 0 and 1
+#' @param num_events Number of events in the dataset used to generate the c-statistic
+#' @param num_non_events Number of non-events in the dataset used to generate the c-statistic (number of cases - number of events)
 #'
-#' @return The logit of x
+#' @return Variance of the c-statistic
 #' @export
 
-est_varc <- function(c, n_sample, n_events){
-  N <- n_sample
-  n <- n_events
+est_varc <- function(c,num_events, num_non_events){
+  N <- num_events + num_non_events
+  n <- num_events
 
   Q1 <- c / (2-c)
   Q2 <- 2 * c^2 / (1 + c)

@@ -1,7 +1,7 @@
 Package: metapred
 Type: Package
 Title: Metaanalysis of Prediction Models
-Version: 0.1.0
+Version: 0.2.0
 Author: Lauren Gordon
 Maintainer: Lauren Gordon <lauren.gordon@utoronto.ca>
 Description: Generates summary statistics for discrimination and calibration of prediction models. Can be used to generate these estimates when the same model is validated in several settings, or to contrast groups of similar models that differ in a key aspect. 

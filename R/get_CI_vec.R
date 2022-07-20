@@ -1,10 +1,13 @@
 #' @title get_CI_vec
 #'
-#' @description Testing 123
+#' @description Estimate confidence intervals of the the c-statistic for multiple studies at once. Inputs are arrays representing corresponding values for each study.
 #'
-#' @param x A value between 0 and 1
+#' @param logitc logit of the c-statistic (AUC) of a predictive model, calculated using the logit function
+#' @param SElogitc standard error of the logit of the c-statistic (AUC) of a predictive model, estimated using est_SElogitc
+#' @param n Sample size in the dataset used to generate the c-statistic
+#' @param alpha Desired significance level
 #'
-#' @return The logit of x
+#' @return Lower bound of confidence interval of the c-statistic
 #' @export
 
 

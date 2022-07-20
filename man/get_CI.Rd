@@ -7,11 +7,17 @@
 get_CI(logitc, varlogitc, n, alpha = 0.05)
 }
 \arguments{
-\item{x}{A value between 0 and 1}
+\item{logitc}{logit of the c-statistic (AUC) of a predictive model, calculated using the logit function}
+
+\item{varlogitc}{variance of the logit of the c-statistic (AUC) of a predictive model, estimated using est_varlogitc}
+
+\item{n}{Sample size in the dataset used to generate the c-statistic}
+
+\item{alpha}{Desired significance level}
 }
 \value{
-The logit of x
+Confidence interval of the c-statistic
 }
 \description{
-Testing 123
+Estimate confidence interval of the the c-statistic.
 }

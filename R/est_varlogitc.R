@@ -1,10 +1,12 @@
 #' @title est_varlogitc
 #'
-#' @description Testing 123
+#' @description Estimate variance of the logit of the c-statistic based on the sample size and number of events.
 #'
-#' @param x A value between 0 and 1
+#' @param c C-statistic (AUC) of a predictive model, value between 0 and 1
+#' @param num_events Number of events in the dataset used to generate the c-statistic
+#' @param num_non_events Number of non-events in the dataset used to generate the c-statistic (number of cases - number of events)
 #'
-#' @return The logit of x
+#' @return Variance of the logit of the c-statistic
 #' @export
 
 est_varlogitc <- function(c,num_events, num_non_events){
